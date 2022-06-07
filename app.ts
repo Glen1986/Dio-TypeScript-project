@@ -1,21 +1,16 @@
-//retorno de tipo "void", es cuando la funcion no retorna nada
-function printaValoresNumericos(n1: number, n2: number): void {
-    console.log(n1 + n2)
-}
+let anyEstaDevuelta: any
+anyEstaDevuelta = 3
+anyEstaDevuelta = true
+anyEstaDevuelta = 'string'
 
-function sumarValoresNumericosETratar(
-    n1: number,
-    n2: number,
-    callback: (n3: number) => number
-): number {
-    let resultado = n1 + n2
-    return callback(resultado)
-}
-function alCuadrado(numero: number): number {
-    return numero * numero
-}
-function dividirPorElMismo(n1: number): number {
-    return n1 / n1
-}
-console.log(sumarValoresNumericosETratar(1, 3, alCuadrado))
-console.log(sumarValoresNumericosETratar(1, 3, dividirPorElMismo))
+let stringTest: string = 'verificar'
+stringTest = anyEstaDevuelta
+
+let unknowValue: unknown
+unknowValue = 3
+unknowValue = 'opa'
+unknowValue = false
+unknowValue = 'no es'
+
+let stringTest2: string = 'ahora es'
+stringTest2 = unknowValue
