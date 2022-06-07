@@ -7,3 +7,6 @@ function sumarValores(n1, n2) {
         return n1 + n2;
     }
 }
+console.log(sumarValores('tenemos: ', 5));
+console.log(sumarValores('hola', ' que tal'));
+console.log(sumarValores(16, 2));
