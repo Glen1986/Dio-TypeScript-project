@@ -1,63 +1,7 @@
-const Darthi = {
-    nombre: 'Darthi',
-    edad: 15,
-    profesion: 'profesora',
+function sumarValores(n1: number | string, n2: number | string) {
+    if (typeof n1 === 'string' || typeof n2 === 'string') {
+        return n1.toString() + n2.toString()
+    } else {
+        return n1 + n2
+    }
 }
-
-const Glen: { nombre: string; edad: number; profesion: string } = {
-    nombre: 'Glen',
-    edad: 35,
-    profesion: 'DEV',
-}
-enum Profesion {
-    'Profesor',
-    'Desenvolvedor',
-    'Portero de Toples',
-    'Capataz',
-    'actriz',
-    'estudiante'
-}
-interface Persona {
-    nombre: string
-    edad: number
-    profesion: Profesion
-}
-const Paul: { nombre: string; edad: number; profesion: string } = {
-    nombre: 'Paul',
-    edad: 25,
-    profesion: Profesion[2],
-}
-const lucho: Persona = {
-    nombre: 'lucho',
-    edad: 22,
-    profesion: Profesion[1],
-}
-const maria: Persona = {
-    nombre: 'maria',
-    edad: 26,
-    profesion: Profesion[4],
-}
-
-interface Estudiante extends Persona {
-    materias: string[]
-}
-const jessi: Estudiante = {
-  nombre:'jessi'
-  edad:22,
-  profesion:Profesion[5],
-  materias:['Matematicas', 'Historia', 'Danza']
-} 
-const manu: Estudiante = {
-  nombre:'Manu'
-  edad:27,
-  materias:['Matematicas', 'Historia', 'Lengua']
-} 
-console.log(Glen, Paul, lucho, maria, jessi, manu)
-
-function listar(lista: string[]){
-  for(const item of lista){
-    console.log('-' ,item)
-  }
-}
-listar(manu.materias)
-listar(jessi.materias)
