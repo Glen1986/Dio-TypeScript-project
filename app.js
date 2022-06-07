@@ -10,4 +10,8 @@ function sumarValoresNumericosETratar(n1, n2, callback) {
 function alCuadrado(numero) {
     return numero * numero;
 }
+function dividirPorElMismo(n1) {
+    return n1 / n1;
+}
 console.log(sumarValoresNumericosETratar(1, 3, alCuadrado));
+console.log(sumarValoresNumericosETratar(1, 3, dividirPorElMismo));
