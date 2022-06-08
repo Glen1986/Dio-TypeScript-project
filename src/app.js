@@ -1,4 +1,11 @@
 "use strict";
+// Como podemos rodar isso em um arquivo .ts sem causar erros?
+let button = document.getElementById('button');
+//
+button === null || button === void 0 ? void 0 : button.addEventListener('click', () => {
+    console.log('click');
+});
+//
 const Darthi = {
     nombre: 'Darthi',
     edad: 15,
